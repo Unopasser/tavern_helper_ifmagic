@@ -1,0 +1,1266 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "default": {},
+  "type": "object",
+  "properties": {
+    "数据面板": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "时间": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "日期": {
+              "default": "帝国历1001/03/01",
+              "type": "string"
+            },
+            "时间": {
+              "default": "08:00",
+              "type": "string"
+            },
+            "地点": {
+              "default": "玛瑙城",
+              "type": "string"
+            },
+            "区域": {
+              "default": "帝国中央",
+              "type": "string",
+              "enum": [
+                "帝国中央",
+                "北境",
+                "西部",
+                "南部",
+                "东部",
+                "哭嚎沼泽",
+                "其他"
+              ]
+            },
+            "天气": {
+              "default": "晴",
+              "type": "string"
+            },
+            "季节": {
+              "default": "春",
+              "type": "string",
+              "enum": [
+                "春",
+                "夏",
+                "秋",
+                "冬"
+              ]
+            },
+            "倒计时": {
+              "default": 365,
+              "type": "number"
+            },
+            "跳跃": {
+              "default": false,
+              "type": "boolean"
+            }
+          }
+        },
+        "身份": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "人物名字": {
+              "default": "异界旅客",
+              "type": "string"
+            },
+            "称号": {
+              "default": "无",
+              "type": "string"
+            },
+            "年龄": {
+              "default": 18,
+              "type": "number"
+            },
+            "出生日期": {
+              "default": "帝国历983年1月1日",
+              "type": "string"
+            },
+            "性别": {
+              "default": "未定",
+              "type": "string"
+            },
+            "种族": {
+              "default": "人类",
+              "type": "string",
+              "enum": [
+                "人类",
+                "魔人",
+                "蛇人",
+                "雪妖",
+                "树人",
+                "精灵",
+                "其他"
+              ]
+            },
+            "身份": {
+              "default": "无身份难民",
+              "type": "string"
+            },
+            "社会地位": {
+              "default": "平民",
+              "type": "string"
+            },
+            "所属势力": {
+              "default": "无",
+              "type": "string"
+            },
+            "身高": {
+              "default": 170,
+              "type": "number"
+            },
+            "体重": {
+              "default": 60,
+              "type": "number"
+            },
+            "外貌": {
+              "default": "",
+              "type": "string"
+            },
+            "声望": {
+              "default": 0,
+              "type": "number"
+            },
+            "通缉度": {
+              "default": 0,
+              "type": "number"
+            }
+          }
+        },
+        "等级": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "等级": {
+              "default": 1,
+              "type": "number"
+            },
+            "境界": {
+              "default": "T1微尘",
+              "type": "string",
+              "enum": [
+                "T1微尘",
+                "T2碎石",
+                "T3穿铁",
+                "T4铸铜",
+                "T5精钢",
+                "T6黑岩",
+                "T7山岳",
+                "T8天穹",
+                "T9神话",
+                "T10半神"
+              ]
+            },
+            "经验": {
+              "default": 0,
+              "type": "number"
+            },
+            "下一级经验": {
+              "default": 10,
+              "type": "number"
+            },
+            "突破进度": {
+              "default": 0,
+              "type": "number"
+            },
+            "突破瓶颈": {
+              "default": "无",
+              "type": "string"
+            },
+            "属性点": {
+              "default": 0,
+              "type": "number"
+            },
+            "元素亲和": {
+              "default": "无",
+              "type": "string"
+            },
+            "魔脉": {
+              "default": "普通",
+              "type": "string"
+            }
+          }
+        },
+        "数值": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "生命值": {
+              "default": 100,
+              "type": "number"
+            },
+            "生命上限": {
+              "default": 100,
+              "type": "number"
+            },
+            "魔力值": {
+              "default": 0,
+              "type": "number"
+            },
+            "魔力上限": {
+              "default": 0,
+              "type": "number"
+            },
+            "怒气值": {
+              "default": 0,
+              "type": "number"
+            },
+            "怒气上限": {
+              "default": 100,
+              "type": "number"
+            },
+            "体力": {
+              "default": 100,
+              "type": "number"
+            },
+            "体力上限": {
+              "default": 100,
+              "type": "number"
+            },
+            "装备加成": {
+              "default": 0,
+              "type": "number"
+            },
+            "技能威力": {
+              "default": 0,
+              "type": "number"
+            },
+            "防御": {
+              "default": 0,
+              "type": "number"
+            },
+            "速度": {
+              "default": 0,
+              "type": "number"
+            },
+            "综合战力": {
+              "default": 0,
+              "type": "number"
+            },
+            "失控值": {
+              "default": 0,
+              "type": "number"
+            },
+            "元素冲突值": {
+              "default": 0,
+              "type": "number"
+            },
+            "精神污染值": {
+              "default": 0,
+              "type": "number"
+            },
+            "虚空债": {
+              "default": 0,
+              "type": "number"
+            },
+            "命运债": {
+              "default": 0,
+              "type": "number"
+            },
+            "神明关注度": {
+              "default": 0,
+              "type": "number"
+            },
+            "位面注意度": {
+              "default": 0,
+              "type": "number"
+            }
+          }
+        },
+        "能力": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "开局技能能力": {
+              "default": "禁魔光环",
+              "type": "string",
+              "enum": [
+                "禁魔光环",
+                "虚空造物",
+                "憎恶面容",
+                "绝对命令",
+                "时间缓滞",
+                "空间锚点",
+                "元素统御"
+              ]
+            },
+            "技能等级": {
+              "default": 1,
+              "type": "number"
+            },
+            "技能充能": {
+              "default": 0,
+              "type": "number"
+            },
+            "技能冷却": {
+              "default": 0,
+              "type": "number"
+            },
+            "主动技能列表": {
+              "default": [],
+              "type": "array",
+              "items": {
+                "default": {},
+                "type": "object",
+                "properties": {
+                  "名称": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "类型": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "效果": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "消耗": {
+                    "default": 0,
+                    "type": "number"
+                  },
+                  "冷却": {
+                    "default": 0,
+                    "type": "number"
+                  },
+                  "等级": {
+                    "default": 1,
+                    "type": "number"
+                  }
+                }
+              }
+            },
+            "被动能力列表": {
+              "default": [],
+              "type": "array",
+              "items": {
+                "default": {},
+                "type": "object",
+                "properties": {
+                  "名称": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "类型": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "效果": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "消耗": {
+                    "default": 0,
+                    "type": "number"
+                  },
+                  "冷却": {
+                    "default": 0,
+                    "type": "number"
+                  },
+                  "等级": {
+                    "default": 1,
+                    "type": "number"
+                  }
+                }
+              }
+            },
+            "已学咒法": {
+              "default": [],
+              "type": "array",
+              "items": {
+                "default": {},
+                "type": "object",
+                "properties": {
+                  "名称": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "类型": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "效果": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "消耗": {
+                    "default": 0,
+                    "type": "number"
+                  },
+                  "冷却": {
+                    "default": 0,
+                    "type": "number"
+                  },
+                  "等级": {
+                    "default": 1,
+                    "type": "number"
+                  }
+                }
+              }
+            },
+            "已学仪式": {
+              "default": [],
+              "type": "array",
+              "items": {
+                "default": {},
+                "type": "object",
+                "properties": {
+                  "名称": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "类型": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "效果": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "消耗": {
+                    "default": 0,
+                    "type": "number"
+                  },
+                  "冷却": {
+                    "default": 0,
+                    "type": "number"
+                  },
+                  "等级": {
+                    "default": 1,
+                    "type": "number"
+                  }
+                }
+              }
+            },
+            "已解锁权能": {
+              "default": [],
+              "type": "array",
+              "items": {
+                "default": {},
+                "type": "object",
+                "properties": {
+                  "名称": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "类型": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "效果": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "消耗": {
+                    "default": 0,
+                    "type": "number"
+                  },
+                  "冷却": {
+                    "default": 0,
+                    "type": "number"
+                  },
+                  "等级": {
+                    "default": 1,
+                    "type": "number"
+                  }
+                }
+              }
+            },
+            "限制与代价": {
+              "default": "无",
+              "type": "string"
+            },
+            "消耗资源": {
+              "default": "魔力",
+              "type": "string",
+              "enum": [
+                "魔力",
+                "怒气",
+                "体力"
+              ]
+            }
+          }
+        },
+        "职业": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "主职": {
+              "default": "无",
+              "type": "string"
+            },
+            "副职": {
+              "default": "无",
+              "type": "string"
+            },
+            "熟练度": {
+              "default": {},
+              "type": "object",
+              "propertyNames": {
+                "type": "string",
+                "description": "职业名"
+              },
+              "additionalProperties": {
+                "default": 0,
+                "type": "number"
+              }
+            },
+            "已解锁能力": {
+              "default": [],
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "状态": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "健康状态": {
+              "default": "健康",
+              "type": "string",
+              "enum": [
+                "健康",
+                "虚弱",
+                "重伤",
+                "濒死",
+                "死亡"
+              ]
+            },
+            "伤病列表": {
+              "default": [],
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "增益列表": {
+              "default": [],
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "减益列表": {
+              "default": [],
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "饥饿": {
+              "default": 0,
+              "type": "number"
+            },
+            "口渴": {
+              "default": 0,
+              "type": "number"
+            },
+            "疲劳": {
+              "default": 0,
+              "type": "number"
+            },
+            "睡眠": {
+              "default": 0,
+              "type": "number"
+            },
+            "卫生": {
+              "default": 100,
+              "type": "number"
+            },
+            "发情状态": {
+              "default": false,
+              "type": "boolean"
+            },
+            "状态标记": {
+              "default": [],
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "装备": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "武器": {
+              "default": [],
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "防具": {
+              "default": [],
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "饰品": {
+              "default": [],
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "耐久": {
+              "default": {},
+              "type": "object",
+              "propertyNames": {
+                "type": "string",
+                "description": "装备名"
+              },
+              "additionalProperties": {
+                "default": 0,
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    },
+    "包裹": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "金钱": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "铜角": {
+              "default": 0,
+              "type": "number"
+            },
+            "银角": {
+              "default": 0,
+              "type": "number"
+            },
+            "银镑": {
+              "default": 0,
+              "type": "number"
+            },
+            "金币冠": {
+              "default": 0,
+              "type": "number"
+            }
+          }
+        },
+        "武器": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "防具": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "饰品": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "药品": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "材料": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "书籍": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "杂物": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "任务物品": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "仓库": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "在场人物": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "default": {},
+        "type": "object",
+        "properties": {
+          "人物姓名": {
+            "default": "",
+            "type": "string"
+          },
+          "人物身份": {
+            "default": "",
+            "type": "string"
+          },
+          "关系阶段": {
+            "default": "陌生",
+            "type": "string"
+          },
+          "好感度": {
+            "default": 0,
+            "type": "number"
+          },
+          "信任度": {
+            "default": 0,
+            "type": "number"
+          },
+          "恐惧度": {
+            "default": 0,
+            "type": "number"
+          },
+          "情欲值": {
+            "default": 0,
+            "type": "number"
+          },
+          "位置": {
+            "default": "",
+            "type": "string"
+          },
+          "状态": {
+            "default": "正常",
+            "type": "string"
+          },
+          "是否重要角色": {
+            "default": false,
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "命运纺线": {
+      "default": {},
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "description": "魔人姓名"
+      },
+      "additionalProperties": {
+        "default": {},
+        "type": "object",
+        "properties": {
+          "性别": {
+            "default": "女",
+            "type": "string"
+          },
+          "出生日期": {
+            "default": "",
+            "type": "string"
+          },
+          "等级": {
+            "default": 1,
+            "type": "number"
+          },
+          "境界": {
+            "default": "T1微尘",
+            "type": "string",
+            "enum": [
+              "T1微尘",
+              "T2碎石",
+              "T3穿铁",
+              "T4铸铜",
+              "T5精钢",
+              "T6黑岩",
+              "T7山岳",
+              "T8天穹",
+              "T9神话",
+              "T10半神"
+            ]
+          },
+          "生命值": {
+            "default": 100,
+            "type": "number"
+          },
+          "魔力值": {
+            "default": 100,
+            "type": "number"
+          },
+          "体力": {
+            "default": 100,
+            "type": "number"
+          },
+          "好感度": {
+            "default": 0,
+            "type": "number"
+          },
+          "信任度": {
+            "default": 0,
+            "type": "number"
+          },
+          "占有欲": {
+            "default": 0,
+            "type": "number"
+          },
+          "情欲值": {
+            "default": 0,
+            "type": "number"
+          },
+          "关系阶段": {
+            "default": "初始期",
+            "type": "string"
+          },
+          "位置": {
+            "default": "",
+            "type": "string"
+          },
+          "状态": {
+            "default": "正常",
+            "type": "string"
+          },
+          "当前事件": {
+            "default": "无",
+            "type": "string"
+          },
+          "专属支线": {
+            "default": "无",
+            "type": "string"
+          },
+          "综合战力": {
+            "default": 0,
+            "type": "number"
+          }
+        }
+      }
+    },
+    "重要角色各部位状态": {
+      "default": {},
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "description": "角色名"
+      },
+      "additionalProperties": {
+        "default": {},
+        "type": "object",
+        "propertyNames": {
+          "type": "string",
+          "description": "部位名"
+        },
+        "additionalProperties": {
+          "default": "",
+          "type": "string"
+        }
+      }
+    },
+    "世界信息": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "世界事件": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "世界八卦": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "主线进度": {
+          "default": "未开始",
+          "type": "string"
+        },
+        "活跃支线": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "世界线索": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "已发现地点": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "位面裂隙": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "未解之谜": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "势力关系": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "势力名"
+          },
+          "additionalProperties": {
+            "default": {},
+            "type": "object",
+            "properties": {
+              "好感": {
+                "default": 0,
+                "type": "number"
+              },
+              "敌对": {
+                "default": 0,
+                "type": "number"
+              },
+              "状态": {
+                "default": "中立",
+                "type": "string"
+              }
+            }
+          }
+        },
+        "战争状态": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "灾荒物价": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "阵营选择": {
+          "default": "未定",
+          "type": "string"
+        },
+        "结局标记": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "任务": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "主线任务": {
+          "default": "无",
+          "type": "string"
+        },
+        "支线任务": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "default": {},
+            "type": "object",
+            "properties": {
+              "任务名称": {
+                "default": "",
+                "type": "string"
+              },
+              "任务类型": {
+                "default": "支线",
+                "type": "string",
+                "enum": [
+                  "支线",
+                  "职业转职",
+                  "职业任务",
+                  "个人",
+                  "其他"
+                ]
+              },
+              "关联职业": {
+                "default": "无",
+                "type": "string"
+              },
+              "任务目标": {
+                "default": "",
+                "type": "string"
+              },
+              "状态": {
+                "default": "未开始",
+                "type": "string",
+                "enum": [
+                  "未开始",
+                  "进行中",
+                  "已完成",
+                  "失败"
+                ]
+              },
+              "期限": {
+                "default": "无",
+                "type": "string"
+              },
+              "奖励": {
+                "default": [],
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "委托": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "default": {},
+            "type": "object",
+            "properties": {
+              "名称": {
+                "default": "",
+                "type": "string"
+              },
+              "目标": {
+                "default": "",
+                "type": "string"
+              },
+              "报酬": {
+                "default": "",
+                "type": "string"
+              },
+              "期限": {
+                "default": "无",
+                "type": "string"
+              },
+              "状态": {
+                "default": "未开始",
+                "type": "string",
+                "enum": [
+                  "未开始",
+                  "进行中",
+                  "已完成",
+                  "失败"
+                ]
+              }
+            }
+          }
+        },
+        "期限": {
+          "default": "无",
+          "type": "string"
+        },
+        "任务奖励": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "遇见敌人": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "default": {},
+        "type": "object",
+        "properties": {
+          "名称": {
+            "default": "",
+            "type": "string"
+          },
+          "等级": {
+            "default": 1,
+            "type": "number"
+          },
+          "境界": {
+            "default": "T1微尘",
+            "type": "string",
+            "enum": [
+              "T1微尘",
+              "T2碎石",
+              "T3穿铁",
+              "T4铸铜",
+              "T5精钢",
+              "T6黑岩",
+              "T7山岳",
+              "T8天穹",
+              "T9神话",
+              "T10半神"
+            ]
+          },
+          "生命值": {
+            "default": 0,
+            "type": "number"
+          },
+          "魔力值": {
+            "default": 0,
+            "type": "number"
+          },
+          "状态": {
+            "default": "正常",
+            "type": "string"
+          },
+          "数量": {
+            "default": 1,
+            "type": "number"
+          }
+        }
+      }
+    },
+    "NSFW": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "成年标记": {
+          "default": false,
+          "type": "boolean"
+        },
+        "关系阶段": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "角色名"
+          },
+          "additionalProperties": {
+            "default": "陌生",
+            "type": "string"
+          }
+        },
+        "同意状态": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "角色名"
+          },
+          "additionalProperties": {
+            "default": "未确认",
+            "type": "string"
+          }
+        },
+        "边界设置": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "最近场景标记": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "活跃伴侣": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "系统": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "变量版本": {
+          "default": "1.0",
+          "type": "string"
+        },
+        "校验状态": {
+          "default": "正常",
+          "type": "string"
+        },
+        "回退标记": {
+          "default": "无",
+          "type": "string"
+        },
+        "UI页签": {
+          "default": "首页",
+          "type": "string"
+        },
+        "存档快照": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "default": {},
+            "type": "object",
+            "properties": {
+              "时间": {
+                "default": "",
+                "type": "string"
+              },
+              "摘要": {
+                "default": "",
+                "type": "string"
+              },
+              "变量快照": {
+                "default": {},
+                "type": "object",
+                "propertyNames": {
+                  "type": "string",
+                  "description": "变量路径"
+                },
+                "additionalProperties": {}
+              }
+            }
+          }
+        },
+        "重演标记": {
+          "default": "无",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

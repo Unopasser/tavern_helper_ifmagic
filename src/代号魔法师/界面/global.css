@@ -1,0 +1,88 @@
+/* 代号魔法师 · 半成品位面语义色卡 */
+:root {
+  --c-primary: #b08d57;
+  --c-primary-soft: rgba(176, 141, 87, 0.22);
+  --c-surface: #16181d;
+  --c-panel: #1f232b;
+  --c-panel-2: #262b34;
+  --c-border: rgba(176, 141, 87, 0.32);
+  --c-text: #e8e1d2;
+  --c-muted: #8b8f98;
+  --c-accent: #7f8cff;
+  --c-danger: #c0453b;
+  --c-success: #5f9e6e;
+  --c-gold: #c9a227;
+  --c-water: #4f8fbf;
+  --c-fire: #d0752f;
+  --c-earth: #a9773f;
+}
+
+.mv-root * {
+  box-sizing: border-box;
+}
+
+.mv-root {
+  font-family: 'Sarasa Gothic SC', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+  color: var(--c-text);
+  line-height: 1.5;
+}
+
+.mv-panel {
+  background: var(--c-panel);
+  border: 1px solid var(--c-border);
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.mv-bar {
+  display: flex;
+  align-items: center;
+  height: 8px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.mv-bar > i {
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+.mv-chip {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  border: 1px solid var(--c-border);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--c-text);
+}
+
+.mv-chip.empty {
+  color: var(--c-muted);
+  border-style: dashed;
+}
+
+.mv-chip.gold {
+  color: var(--c-gold);
+  border-color: rgba(201, 162, 39, 0.5);
+}
+
+.mv-chip.danger {
+  color: var(--c-danger);
+  border-color: rgba(192, 69, 59, 0.5);
+}
+
+.mv-stamp {
+  border: 2px solid var(--c-primary);
+  color: var(--c-primary);
+  border-radius: 6px;
+  transform: rotate(-3deg);
+  padding: 6px 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-align: center;
+}
